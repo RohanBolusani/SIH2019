@@ -1,0 +1,92 @@
+
+<body>
+  <ion-header>
+    <ion-navbar>
+      <ion-title text-center padding>
+       <div class="titl"><h1>{{ 'A' | translate }}</h1></div>
+       
+      </ion-title >  
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+            <!-- <ul class="navbar-nav">
+              <li class="nav-item active"> -->
+                  <div class="btn-group">
+                      <div>
+                          <button ion-button id="a" class="btn btn-danger" round (click)="register()">{{ 'R' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-danger" round (click)="signIn()">{{ 'S' | translate }}</button> 
+                          <button ion-button id="a" class="btn btn-danger" round (click)="orgsignIn()">{{ 'SO' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-danger" round (click)="goToMaterials()">{{ 'KH' | translate }}</button>
+                    </div>
+                    <div >
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="openBenefitsPage()">{{ 'BE' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="openForumPage()">{{ 'FO' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="openAgentsPage()">{{ 'AG' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="openProcedurePage()">{{ 'PR' | translate }}</button>
+                          <!-- <button ion-button id="a" class="btn btn-outline-danger" round (click)="discuss()">{{ 'TR' | translate }}</button> -->
+                    </div>
+                  </div>
+              <!-- </li>
+            </ul> -->
+          <!-- </div> -->
+        </nav>
+
+        <div float-right class="a3">
+            <ion-list>
+               <ion-item>
+               <ion-label><div>Language</div></ion-label>
+       
+               <ion-select [(ngModel)]="lang" (ionChange)="switchLanguage()">
+               <ion-option value="en">English</ion-option>
+               <ion-option value="ta">Hindi (हिंदी)</ion-option>
+               </ion-select>
+               </ion-item>
+               </ion-list>
+       
+            </div><br><br><br>
+  
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+  
+      
+      <div class="fg">
+      <img src="assets/imgs/future.jpg" style="width:50%">
+      </div>
+      <br><br>
+      <div class="bold1">
+          {{ 'E' | translate }}
+      </div>
+  
+      <div class="text1">
+  
+          {{ 'INSURANCE' | translate }}
+        </div>
+  
+        <!-- <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br> -->
+  
+  </ion-content>
+  
+  <!-- <ion-footer>
+    <br><br>
+      <ion-toolbar>
+        <ion-title>{{ 'F' | translate }}</ion-title>
+      </ion-toolbar>
+      <br><br>
+    </ion-footer> -->
+    <ion-footer>
+    <ion-list float-Right id="icons">
+      <br>
+        <ion-icon name="logo-facebook" style="zoom:2.0;" color="icons" padding-right=1% onclick="window.open('https://www.facebook.com/FutureGenerali')"></ion-icon>
+        <ion-icon name="logo-twitter" style="zoom:2.0;" color="icons"  padding-right=1% onclick="window.open('https://twitter.com/Future_Generali')"></ion-icon>
+        <ion-icon name="logo-instagram"style="zoom:2.0;"  color="icons" padding-right=1% onclick="window.open('https://www.instagram.com/futuregenerali/')"></ion-icon>
+        <ion-icon name="logo-youtube"style="zoom:2.0;"  color="icons" padding-right=1% onclick="window.open('https://www.youtube.com/user/FutureGeneraliLtd')"></ion-icon>
+  
+      </ion-list>
+    </ion-footer>
+    
+  </body>

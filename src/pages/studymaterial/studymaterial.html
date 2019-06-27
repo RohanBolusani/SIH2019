@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>studymaterial</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div *ngFor="let u of vids" id="row">
+      <div id="vids">
+      <p [innerHTML]=u.name id="disp"></p>
+        <iframe width="250" height="250" [src]=u.url frameborder="0" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </div> 
+     <br><br>
+           
+     
+
+    <!-- <div class="jumbotron" *ngFor ='let u of mats;let i=index'>
+
+         <a [href]=u.url>Download PPT</a>
+           <p><a class="e2e-trusted-url" [href]=u.url> {{u.name}} </a></p>
+             </div>
+              -->
+             <ion-grid>
+             <ion-row>
+                <div *ngFor ='let u of mats;let i=index'>
+             <ion-col>
+              <ion-card float-left id="pdf">
+                  <ion-card-content>
+                    <ion-icon name="document" color="danger" style="zoom:2.0;" float-center></ion-icon>
+                    <hr>
+                    <p><a class="e2e-trusted-url" [href]=u.url> {{u.name}} </a></p>
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+              </div>
+              </ion-row>
+            </ion-grid>
+
+</ion-content>
+

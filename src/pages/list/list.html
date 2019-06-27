@@ -1,0 +1,25 @@
+<!--
+  Generated template for the ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>list</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list radio-group (ionChange)="selectedopt($event)" no-lines>
+        <ion-item *ngFor="let i of questions; let j = index;">
+            <ion-label>Set {{i.name}}</ion-label>
+            <ion-radio name="options" value={{i.key}}></ion-radio>
+        </ion-item>
+    </ion-list>
+  <button ion-button [disabled]='noshow' (click)="selectpaper()" color="danger">selectpaper</button>
+
+</ion-content>

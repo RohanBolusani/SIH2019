@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Study Materials</ion-title>
+   
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ 
+
+
+<br><br>
+<!-- 
+https://dribbble.com/shots/2227352-Day-067-Smart-Home-UI/attachments/414148
+-->
+Choose Material:  <input type="file"  (change)="noteMaterial($event)">
+<button ion-button (click)="upload()">Upload</button>
+<br><br>
+Choose Video:  
+<ion-input style="border:1px solid black" type="text" [(ngModel)]="videoUrl"></ion-input>
+<ion-input style="border:1px solid black" type="text" [(ngModel)]="videoName" ></ion-input>
+
+<button ion-button (click)="uploadVid()">Upload</button>
+
+</ion-content>

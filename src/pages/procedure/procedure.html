@@ -1,0 +1,102 @@
+<!--
+  Generated template for the ProcedurePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+      <ion-title text-center padding>
+       <h1>{{ 'A' | translate }}</h1>
+       
+      </ion-title >  
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+            <!-- <ul class="navbar-nav">
+              <li class="nav-item active"> -->
+                  
+                    <!-- <div >
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="openBenefitsPage()">{{ 'BE' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="openForumPage()">{{ 'FO' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="openAgentsPage()">{{ 'AG' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="openProcedurePage()">{{ 'PR' | translate }}</button>
+                          <button ion-button id="a" class="btn btn-outline-danger" round (click)="discuss()">{{ 'TR' | translate }}</button>
+                    </div> -->
+                  
+              <!-- </li>
+            </ul> -->
+          <!-- </div> -->
+        </nav>
+
+        <div float-right class="a3">
+            <ion-list>
+               <ion-item>
+               <ion-label><div>Language</div></ion-label>
+       
+               <ion-select [(ngModel)]="lang" (ionChange)="switchLanguage()">
+               <ion-option value="en">English</ion-option>
+               <ion-option value="ta">Hindi (हिंदी)</ion-option>
+               </ion-select>
+               </ion-item>
+               </ion-list>
+       
+            </div><br><br><br>
+  
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+    
+    <br><br>
+     <h2> {{ 'P1' | translate }} </h2>
+      <br>
+ 
+      <ion-row>
+          <ion-col>
+          <ion-card float-left>
+              <ion-card-content>
+        <div><ion-icon name="arrow-dropright" float-left margin-right=1px></ion-icon>
+    {{ 'P2' | translate }}<br><br>
+    </div>
+   
+    
+    <div><ion-icon name="arrow-dropright" float-left margin-right=1px></ion-icon>
+          {{ 'P3' | translate }}<br><br></div>
+    
+          <div><ion-icon name="arrow-dropright" float-left margin-right=1px></ion-icon>
+            {{ 'P4' | translate }}<br><br></div>
+            <div><ion-icon name="arrow-dropright" float-left margin-right=1px></ion-icon>
+          
+          
+              {{ 'P5' | translate }}<br><br></div>
+           
+              <div><ion-icon name="arrow-dropright" float-left margin-right=1px></ion-icon>
+
+                {{ 'P6' | translate }}<br><br></div>
+
+                <div><ion-icon name="arrow-dropright" float-left margin-right=1px></ion-icon>    
+                  {{ 'P7' | translate }}<br><br></div>
+            
+                  <div><ion-icon name="arrow-dropright" float-left margin-right=1px></ion-icon>
+                 
+                    {{ 'P8' | translate }}<br><br></div>
+            
+
+                    <div><ion-icon name="arrow-dropright" float-left margin-right=1px></ion-icon>
+                      {{ 'P9' | translate }}<br><br>
+                     </div>
+                    
+                          
+                              
+                            </ion-card-content>
+                        </ion-card>
+                        </ion-col>
+                      </ion-row>
+                            <br><br>
+
+</ion-content>

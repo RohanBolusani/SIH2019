@@ -1,0 +1,42 @@
+<ion-header>
+
+    <ion-navbar color="danger">
+      <ion-title text-center padding>SignIn</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  <div id="margins">
+    <ion-list>
+      <ion-item >
+          <ion-label floating color="textc">Email</ion-label>
+          <ion-input type="email" required="required" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <br>
+    
+      <ion-item>
+        <ion-label floating color="textc" >Enter Password</ion-label>
+        <ion-input type="password" required="required" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    <br>
+    <br>
+  
+  
+     <br>
+     <br>
+  
+  
+      <button ion-button color="danger" round (click)="signIn()">Signin</button>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+     
+      <!-- <button ion-button clear full >Forgot password?</button> -->
+  </ion-list>
+  </div>
+  </ion-content>

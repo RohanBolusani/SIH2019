@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Model paper</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div><ion-label>Set Number</ion-label>
+        <input type="number" [(ngModel)]="setno" >
+    </div>
+    <div><ion-label>Question</ion-label>
+        <input type="text" [(ngModel)]="questionText" >
+    </div>
+    <div>
+            <ion-label>Options</ion-label>
+        <input type="text" [(ngModel)]="opt1.text">
+        <select name="" [(ngModel)]="opt1.ans" id="">
+            <option value="true">true</option>
+            <option value="false">false</option>
+        </select>
+    </div>
+    <div>
+      <input type="text" [(ngModel)]="opt2.text">
+      <select name="" [(ngModel)]="opt2.ans" id="">
+          <option value="true">true</option>
+          <option value="false">false</option>
+      </select>
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="opt3.text">
+    <select name="" [(ngModel)]="opt3.ans" id="">
+        <option value="true">true</option>
+        <option value="false">false</option>
+    </select>
+</div>
+<!-- <div><input type="text" [(ngModel)]="timerval"></div>    -->
+<button ion-button (click)="nextQues()" >Next Question</button>
+    <button ion-button (click)="submit()" >Submit</button>
+</ion-content>

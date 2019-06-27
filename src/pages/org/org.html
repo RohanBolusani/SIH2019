@@ -1,0 +1,62 @@
+<!--
+  Generated template for the OrgPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+      <span><button ion-button  (click)="uploadMaterial()" color="light" round>Upload Material</button>
+      <button ion-button  (click)="uploadQs()" color="light" round>Set Qs Paper</button>
+      <button ion-button  (click)="logOut()" color="light" round>Logout</button>
+      <button ion-button  (click)="stat()" color="light" round>Stats</button></span>
+    <ion-title>org</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+  <div id="list">
+
+<ion-list>
+  
+  
+    <ion-list *ngFor ="let per of personid">
+
+      <ion-item *ngIf=per.submit>
+     <a (click)="viewProfile(per)">
+         
+             
+        
+        
+        <b> <p>{{per.fname}} {{per.surname}} </p></b>
+        <p>{{per.email}} </p> 
+        <b><p>{{per.fname}} has spent {{per.timer}}</p></b> 
+
+        <!-- <ion-note>
+         User ID : {{per.key}}
+      </ion-note> -->
+    
+    </a>
+      </ion-item>
+     </ion-list>   
+    
+
+
+
+    
+   
+</ion-list>
+</div>
+<!-- <div>
+<input id="numberTxt" placeholder="Enter mobile number" value="" type="tel" [(ngModel)]="number" />
+<textarea id="messageTxt" placeholder="Enter message" [(ngModel)]="message"></textarea>
+<input type="button" onclick="app.sendSms()" value="Send SMS" />
+</div> -->
+</ion-content>
+

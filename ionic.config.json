@@ -1,0 +1,7 @@
+{
+  "name": "SApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,129 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title float-left padding>{{ 'S1' | translate }}</ion-title>
+
+    <div float-right class="a3">
+        <ion-list>
+           <ion-item>
+           <ion-label><div>Language</div></ion-label>
+   
+           <ion-select [(ngModel)]="lang" (ionChange)="switchLanguage()">
+           <ion-option value="en">English</ion-option>
+           <ion-option value="ta">Hindi (हिंदी)</ion-option>
+           </ion-select>
+           </ion-item>
+           </ion-list>
+   
+        </div>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div id="margins">
+  <ion-list>
+    <ion-item >
+        <ion-label floating color="textc">{{'S2' | translate }}</ion-label>
+        <ion-input type="email" required="required" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <br>
+  
+    <ion-item>
+      <ion-label floating color="textc" >{{'S3' | translate }}</ion-label>
+      <ion-input type="password" required="required" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  <br>
+  <br>
+
+
+   <br>
+   <br>
+
+
+    <button ion-button color="danger" round (click)="signIn()">{{'S4' | translate }}</button>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   
+    <!-- <button ion-button clear full >Forgot password?</button> -->
+</ion-list>
+</div>
+</ion-content>
+
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title><br>
+      Login
+    </ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button block ion-button (click)="signIn()">Sign In</button>
+  </div>
+</ion-list>
+</ion-content> -->
+
+
+
+<!--<html><ion-header>
+    <ion-navbar>
+      <ion-title><br>
+        
+      </ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+  <body>
+    
+  
+<div class="login">
+  <h1>Login</h1>
+
+
+
+
+    <form method="post">
+         <a href="skype:+8500570821?call" style="color:white">Call me</a> 
+    	<input type="text" name="u" placeholder="Email" required="required" [(ngModel)]="email" />
+        <input type="password" name="p" placeholder="Password" required="required" [(ngModel)]="password" />
+        <button ion-button type="submit" class="btn btn-primary btn-block btn-large" (click)="signIn()">Log in</button>
+    </form>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+<html>
+  
+</html>
+-->

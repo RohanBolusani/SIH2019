@@ -1,0 +1,54 @@
+<!--
+  Generated template for the AppformPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+
+  -contact no
+  -addr
+  -pincode
+  -city
+  -state
+  -aadhar no
+  -skype id
+  -gender
+  -category captive(Life3/General-travel,Fire,vehicles,property)
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>appform</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="jumbotron" >
+    
+      <input type="number" [(ngModel)]="phone" placeholder="Contact"><br>
+      <input type="textbox" [(ngModel)]="address" placeholder="Address"><br>
+      <input type="number" [(ngModel)]="pincode" placeholder="Pin Code"><br>
+      <input type="text" [(ngModel)]="city" placeholder="City"><br>
+      <input type="text" [(ngModel)]="state" placeholder="State"><br>
+      <input type="number" [(ngModel)]="aadno" placeholder="Aadhar Number"><br>
+      <input type="text" [(ngModel)]="skypeId" placeholder="Skype ID"><br>
+      Gender:<select [(ngModel)]="gender">
+        <option value="M">Male </option>
+        <option value="F">Female </option>
+      </select>
+      <br><br>
+      Category of Captive Agent field you're looking for:<br>
+      <select [(ngModel)]="category">
+          <option value="travel">Travel Insurance Agency</option>
+          <option value="fire">Fire/Casuality </option>
+          <option value="vehicles">Motor Insurance </option>
+          <option value="property">Property Insurance </option>
+          <option value="F">Female </option>
+        </select>
+        <button ion-button type="submit" (click)="sendAppForm()">submit </button>
+     
+
+  </div>
+
+</ion-content>

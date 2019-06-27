@@ -1,0 +1,34 @@
+<ion-content>
+    <ion-slides #slides>
+  
+        <ion-slide class="start-slide">
+            <button [disabled]='!showStart' ion-button color="primary" (click)="nextSlide()" color="danger">Start!</button>
+        </ion-slide>
+  
+        <ion-slide *ngFor="let question of questions; let i = index;">
+            <h2>{{paper}}</h2>
+            <h3>Question {{i+1}}</h3>
+  
+            <h3>{{question.questionText}}</h3>
+            <ion-list no-lines radio-group>
+  
+                <ion-item *ngFor="let answer of question.answers; let j = index;">
+                    <ion-label> {{j+1}}.{{answer.answer}}</ion-label>
+                    <ion-radio (click)="selectAnswer(answer, question)" [disabled]="hasAnswered"></ion-radio>
+  
+                </ion-item>
+  
+            </ion-list>
+  
+        </ion-slide>
+  
+        <ion-slide>
+            <h2>Final Score: {{score}}</h2>
+  
+            <button (click)="submitQuiz()" ion-button full color="danger">Submit</button>
+  
+        </ion-slide>
+  
+    </ion-slides>
+  
+  </ion-content>
